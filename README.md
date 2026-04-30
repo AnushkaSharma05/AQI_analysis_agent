@@ -3,6 +3,7 @@
 A personalized air quality monitoring app that turns live air data into clear, practical health guidance.
 
 Live app: https://aqi-analyzer-agent.streamlit.app/
+Local app: http://localhost:8501
 
 ## 🖼️ Screenshot
 ![alt text](image.png)
@@ -30,9 +31,9 @@ Live app: https://aqi-analyzer-agent.streamlit.app/
    ```
 3. Create a .env file with these keys:
    ```bash
-   OPENWEATHER_API_KEY=your-key
-   OPENROUTER_API_KEY=your-key
-   WAQI_API_KEY=your-key
+   WEATHER_API_KEY=your-key
+   AI_API_KEY=your-key
+   AQI_API_KEY=your-key
    ```
 4. Run:
    ```bash
@@ -55,7 +56,6 @@ aqi-agent/
 ├── agent.py         # AI health recommendations
 ├── aqi_fetcher.py   # Fetches live AQI data
 ├── .env             # API keys (not committed)
-├── .env.example     # Safe template for API keys
 └── requirements.txt # Dependencies
 
 Built as a learning project 
