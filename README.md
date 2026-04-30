@@ -1,30 +1,61 @@
 # AQI Analysis Agent
 
-This Streamlit app fetches live air quality and weather data for a city, then turns it into a clean, readable health brief. It is beginner-friendly, heavily commented, and designed for quick AQI checks with simple guidance.
+A personalized air quality monitoring app powered by AI that gives real time health recommendations.
 
-## Setup
-1. Install dependencies:
+## 🖼️ Screenshot
+![alt text](image.png)
+
+## ✨ Features
+- Real time AQI data from OpenWeather
+- EPA formula for accurate AQI calculation
+- AI powered health recommendations via Claude
+- Personalized advice based on medical conditions
+- Dark cyberpunk UI built with Streamlit
+- City validation and error handling
+
+## 🧰 Tech Stack
+- Python
+- Streamlit (UI)
+- OpenWeather API (AQI + weather data)
+- OpenRouter + Claude (AI recommendations)
+- WAQI API (cross check AQI accuracy)
+
+## ⚙️ Setup
+1. Clone the repo
+2. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-2. Create a `.env` file with your keys:
+3. Create a .env file with these keys:
    ```bash
-   OPENWEATHER_API_KEY=your_openweather_key
-   OPENROUTER_API_KEY=your_openrouter_key
+   OPENWEATHER_API_KEY=your-key
+   OPENROUTER_API_KEY=your-key
+   WAQI_API_KEY=your-key
    ```
-3. Run the app:
+4. Run:
    ```bash
    streamlit run main.py
    ```
 
-## How It Works
-- OpenWeather provides AQI and weather data for the selected city.
-- The app builds a clean summary for the AI model.
-- The AI returns a strict, UI-friendly response that is rendered as a styled card.
+## 🔑 How to Get API Keys
+- OpenWeather: openweathermap.org
+- OpenRouter: openrouter.ai
+- WAQI: aqicn.org/data-platform/token
 
-## File Overview
-- main.py: Streamlit UI, styles, layout, and validation.
-- agent.py: Builds the AI prompt and calls OpenRouter.
-- aqi_fetcher.py: Calls OpenWeather APIs and returns AQI + weather data.
-- requirements.txt: Python dependencies list.
-- .env: API keys for OpenWeather and OpenRouter.
+## 🧠 How It Works
+- User enters city and health profile
+- App fetches live AQI and weather data
+- EPA formula calculates accurate AQI
+- Claude AI generates personalized health advice
+- Results shown in a dark dashboard UI
+
+## 🗂️ Project Structure
+aqi-agent/
+├── main.py          # Streamlit UI
+├── agent.py         # AI health recommendations
+├── aqi_fetcher.py   # Fetches live AQI data
+├── .env             # API keys (not committed)
+├── .env.example     # Safe template for API keys
+└── requirements.txt # Dependencies
+
+Built as a learning project 
