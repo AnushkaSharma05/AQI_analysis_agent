@@ -3,7 +3,6 @@
 A personalized air quality monitoring app that turns live air data into clear, practical health guidance.
 
 Live app: https://aqi-analyzer-agent.streamlit.app/
-Local app: http://localhost:8501
 
 ## 🖼️ Screenshot
 ![alt text](image.png)
