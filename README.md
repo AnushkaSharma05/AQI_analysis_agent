@@ -1,14 +1,16 @@
 # AQI Analysis Agent
 
-A personalized air quality monitoring app powered by AI that gives real time health recommendations.
+A personalized air quality monitoring app that turns live air data into clear, practical health guidance.
+
+Live app: https://aqi-analyzer-agent.streamlit.app/
 
 ## 🖼️ Screenshot
 ![alt text](image.png)
 
 ## ✨ Features
-- Real time AQI data from OpenWeather
+- Real time AQI data with weather context
 - EPA formula for accurate AQI calculation
-- AI powered health recommendations via Claude
+- AI powered health recommendations
 - Personalized advice based on medical conditions
 - Dark cyberpunk UI built with Streamlit
 - City validation and error handling
@@ -16,9 +18,9 @@ A personalized air quality monitoring app powered by AI that gives real time hea
 ## 🧰 Tech Stack
 - Python
 - Streamlit (UI)
-- OpenWeather API (AQI + weather data)
-- OpenRouter + Claude (AI recommendations)
-- WAQI API (cross check AQI accuracy)
+- Weather API (AQI + weather data)
+- AI model API (recommendations)
+- AQI data API (cross check accuracy)
 
 ## ⚙️ Setup
 1. Clone the repo
@@ -38,15 +40,13 @@ A personalized air quality monitoring app powered by AI that gives real time hea
    ```
 
 ## 🔑 How to Get API Keys
-- OpenWeather: openweathermap.org
-- OpenRouter: openrouter.ai
-- WAQI: aqicn.org/data-platform/token
+- Get keys from your preferred weather, AI model, and AQI data providers.
 
 ## 🧠 How It Works
 - User enters city and health profile
 - App fetches live AQI and weather data
 - EPA formula calculates accurate AQI
-- Claude AI generates personalized health advice
+- AI generates personalized health advice
 - Results shown in a dark dashboard UI
 
 ## 🗂️ Project Structure
@@ -59,3 +59,6 @@ aqi-agent/
 └── requirements.txt # Dependencies
 
 Built as a learning project 
+
+## ✍️ Author
+Anushka Sharma
