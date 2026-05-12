@@ -50,6 +50,8 @@ Live app: https://aqi-analyzer-agent.streamlit.app/
 - Results shown in a dark dashboard UI
 
 ## 🗂️ Project Structure
+
+```bash
 aqi-agent/
 ├── main.py          # Streamlit UI
 ├── agent.py         # AI health recommendations
